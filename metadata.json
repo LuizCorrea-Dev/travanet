@@ -1,0 +1,6 @@
+{
+  "name": "TravaNet",
+  "description": "Controle parental para bloquear Wi-Fi e internet móvel com senha, horários de uso, agendamentos e bloqueio rápido.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TravaNet</string>
+    <string name="vpn_service_label">TravaNet Firewall Parental</string>
+    <string name="device_admin_description">Impede a desinstalação do TravaNet sem autorização dos pais.</string>
+    <string name="notification_channel_name">Proteção TravaNet</string>
+    <string name="notification_channel_desc">Mantém o bloqueio de Wi-Fi e internet móvel ativo segundo as regras configuradas.</string>
+</resources>
