@@ -102,4 +102,4 @@ gradle :app:testDebugUnitTest
 
 ## Política de Privacidade
 
-O TravaNet opera integralmente de forma local no dispositivo, sem coleta, venda ou envio de dados para servidores externos. Consulte a página completa em [`privacy-policy.html`](privacy-policy.html).
+O TravaNet opera integralmente de forma local no dispositivo, sem coleta, venda ou envio de dados para servidores externos. Consulte a página completa em [`privacy-policy.html`](https://htmlpreview.github.io/?https://github.com/LuizCorrea-Dev/travanet/blob/main/privacy-policy.html).
