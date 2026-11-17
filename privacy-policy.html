@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — TravaNet</title>
+  <style>
+    :root {
+      --bg: #F6F8FB;
+      --surface: #FFFFFF;
+      --surface-alt: #EEF2F7;
+      --text: #0F172A;
+      --text-muted: #475569;
+      --primary: #1E3A8A;
+      --primary-soft: #EFF6FF;
+      --accent: #059669;
+      --accent-soft: #D1FAE5;
+      --border: #E2E8F0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0B1120;
+        --surface: #111827;
+        --surface-alt: #1E293B;
+        --text: #F8FAFC;
+        --text-muted: #94A3B8;
+        --primary: #60A5FA;
+        --primary-soft: #1E293B;
+        --accent: #34D399;
+        --accent-soft: #064E3B;
+        --border: #334155;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px 64px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    header.hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      line-height: 1.25;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    section.card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    li strong {
+      color: var(--text);
+    }
+
+    .callout {
+      background: var(--primary-soft);
+      border-left: 4px solid var(--primary);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--surface-alt);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.88em;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="badge">100% Local • Sem Coleta de Dados</div>
+      <h1>Política de Privacidade — TravaNet</h1>
+      <p class="meta">
+        Aplicativo de Controle Parental de Conexão (Android) • Última atualização: 17 de novembro de 2026
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>1. Visão Geral</h2>
+      <p>
+        O <strong>TravaNet</strong> é um aplicativo de controle parental desenvolvido para permitir que pais e responsáveis
+        gerenciem o acesso à internet (Wi-Fi e dados móveis) diretamente no dispositivo Android por meio de senha parental (PIN),
+        bloqueios rápidos e agendamentos de horários.
+      </p>
+      <p>
+        A privacidade da família é prioridade absoluta: o TravaNet opera <strong>exclusivamente de forma local no aparelho</strong>.
+        Não exigimos criação de conta online e não enviamos informações para servidores externos.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Dados Armazenados Localmente</h2>
+      <p>
+        Para o funcionamento das regras configuradas por você, o aplicativo armazena apenas no armazenamento privado do Android:
+      </p>
+      <ul>
+        <li><strong>Perfis de bloqueio e horários:</strong> nomes dos perfis, preferências de bloqueio de Wi-Fi/dados móveis, dias da semana e intervalos configurados (banco de dados local Room).</li>
+        <li><strong>Senha parental (PIN):</strong> armazenada exclusivamente como resumo criptográfico irreversível (<code>SHA-256</code> com salt aleatório) em <code>DataStore</code>. O PIN em texto simples nunca é gravado.</li>
+        <li><strong>Estado temporário de bloqueio ou pausa:</strong> informações sobre bloqueio total ativo, temporizador de bloqueio rápido ou pausa autorizada pelos pais.</li>
+      </ul>
+      <p>
+        Nenhum dado pessoal identificável (nome real, e-mail, localização, contatos, fotos ou histórico de navegação) é coletado pelo aplicativo.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>3. Uso do Serviço VPN Local (<code>VpnService</code>)</h2>
+      <p>
+        O TravaNet utiliza a API oficial <code>android.net.VpnService</code> do Android para implementar um firewall local
+        capaz de bloquear conexões Wi-Fi e internet móvel sem exigir acesso root.
+      </p>
+      <div class="callout">
+        <strong>Compromisso de transparência:</strong> O túnel VPN criado pelo TravaNet é estritamente interno ao próprio aparelho.
+        Nenhum tráfego de rede, endereço acessado, pacote de dados ou conteúdo de navegação é inspecionado para perfilamento,
+        registrado em histórico ou encaminhado para servidores de terceiros. Os pacotes são apenas descartados localmente enquanto o bloqueio estiver ativo.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4. Permissões do Sistema e Finalidade</h2>
+      <ul>
+        <li><strong>Serviço VPN (<code>BIND_VPN_SERVICE</code>):</strong> aplicar o bloqueio local de tráfego Wi-Fi e dados móveis nas janelas configuradas.</li>
+        <li><strong>Estado da Rede e Wi-Fi (<code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>, <code>INTERNET</code>):</strong> verificar se o aparelho está conectado via Wi-Fi ou rede celular para aplicar bloqueios seletivos.</li>
+        <li><strong>Serviço em Primeiro Plano e Notificações (<code>FOREGROUND_SERVICE</code>, <code>POST_NOTIFICATIONS</code>):</strong> manter a proteção estável enquanto um bloqueio estiver ativo e informar o status na barra de notificações.</li>
+        <li><strong>Alarmes e Inicialização (<code>SCHEDULE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>):</strong> iniciar e encerrar bloqueios nos horários agendados e restaurar a proteção após reiniciar o dispositivo.</li>
+        <li><strong>Administrador do Dispositivo (<code>BIND_DEVICE_ADMIN</code> — opcional):</strong> impedir que o aplicativo seja desinstalado sem autorização dos pais.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>5. Compartilhamento com Terceiros</h2>
+      <p>
+        O TravaNet <strong>não compartilha, vende, aluga ou transfere</strong> quaisquer dados para terceiros. O aplicativo não integra
+        redes de anúncios, ferramentas de rastreamento publicitário ou serviços de análise externa.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. Retenção e Exclusão de Dados</h2>
+      <p>
+        Como todas as informações permanecem exclusivamente no dispositivo, você possui controle total sobre elas.
+        É possível editar ou excluir perfis a qualquer momento mediante a senha parental, ou remover todos os dados de forma
+        definitiva limpando o armazenamento do aplicativo ou desinstalando o TravaNet pela aba <strong>Segurança</strong>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. Privacidade de Crianças e Adolescentes</h2>
+      <p>
+        Embora o aplicativo seja utilizado para proteção parental em dispositivos usados por crianças ou adolescentes, o TravaNet
+        não coleta dados pessoais de menores de idade, não possui recursos sociais, chats ou formulários online e mantém todas
+        as configurações sob controle local do responsável por meio de senha.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. Alterações e Contato</h2>
+      <p>
+        Esta Política de Privacidade pode ser atualizada para refletir melhorias no aplicativo ou adequações regulatórias.
+        A data de revisão no topo desta página indica a versão vigente.
+      </p>
+      <p>
+        Em caso de dúvidas sobre privacidade ou funcionamento do TravaNet, entre em contato com o responsável pela publicação
+        através do e-mail de suporte informado na ficha do aplicativo ou no repositório oficial do projeto.
+      </p>
+    </section>
+
+    <footer>
+      TravaNet • Controle Parental Local para Android
+    </footer>
+  </main>
+</body>
+</html>
